@@ -66,6 +66,8 @@
 					</div>
 				</div>
 				<br />
+								<div id="tcomment"></div>
+
 			</div>
 
 			<!-- div class="col-md-8 col-md-offset-2" -->
@@ -85,20 +87,16 @@
 	<script type="text/javascript" src="/assets/js/clipboard.min.js"></script>
 	<script type="text/javascript" src="/assets/js/my.js"></script>
 	<script>
+		twikoo.init({
+			envId: 'https://twikoo.mistyhill.ml/', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+			el: '#tcomment', // 容器元素
+		})
+	</script>
+	<script>
 		var username = "mistyhills53@163.com"
 		var password = "联系邮件获取"
 		document.getElementById("account").innerHTML = username
 		document.getElementById("password").innerHTML = password;
-	</script>
-	<!-- 百度统计 -->
-	<script>
-		var _hmt = _hmt || [];
-		(function() {
-			var hm = document.createElement("script")
-			hm.src = "https://hm.baidu.com/hm.js?87c25631fce83d39f7cbb3c085df77ae"
-			var s = document.getElementsByTagName("script")[0]
-			s.parentNode.insertBefore(hm, s)
-		})();
 	</script>
 </body>
 
